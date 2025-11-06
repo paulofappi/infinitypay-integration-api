@@ -13,8 +13,8 @@ A lightweight Express.js service that exposes health endpoints and provides a fo
    npm run dev
    ```
 3. Access the base endpoint:
-   - `GET /` returns a welcome message.
-   - `GET /api/health` returns service status details.
+- `GET /` returns a welcome message.
+- `GET /api/health` returns service status details, including the service uptime in seconds.
 
 ## Environment variables
 
