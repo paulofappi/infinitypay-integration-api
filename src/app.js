@@ -1,6 +1,7 @@
 import express from 'express'
 import helmet from 'helmet'
 import healthRoutes from './routes/health.routes.js'
+import reviewRoutes from './routes/review.routes.js'
 
 export const buildApp = () => {
   const app = express()
@@ -13,6 +14,7 @@ export const buildApp = () => {
   })
 
   app.use('/api', healthRoutes)
+  app.use('/api', reviewRoutes)
 
   app.use((req, res) => {
     res.status(404).json({
